@@ -1,3 +1,7 @@
+## 1.0.2
+
+- Added example project
+
 ## 1.0.1+1
 
 - Added platforms to `pubspec.yaml`
