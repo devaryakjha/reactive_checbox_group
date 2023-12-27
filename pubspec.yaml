@@ -1,6 +1,6 @@
 name: reactive_checbox_group
 description: "A package to help create a group of reactive checkboxes in flutter."
-version: 1.0.0+1
+version: 1.0.1+1
 repository: "https://github.com/devaryakjha/reactive_checbox_group.git"
 
 environment:
@@ -53,3 +53,11 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
