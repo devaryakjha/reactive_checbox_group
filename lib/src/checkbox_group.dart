@@ -121,7 +121,6 @@ class ReactiveCheckboxGroupListTile<T, V>
                                 field,
                                 option,
                                 minimumOptions,
-                                valueAccessor,
                               );
                               onChanged?.call(field.control);
                             }
@@ -173,7 +172,6 @@ class ReactiveCheckboxGroupListTile<T, V>
                                 field,
                                 option,
                                 minimumOptions,
-                                valueAccessor,
                               );
                               onChanged?.call(field.control);
                             }
@@ -191,7 +189,6 @@ class ReactiveCheckboxGroupListTile<T, V>
     ReactiveFormFieldState<List<T>, List<V>> field,
     V option,
     int minimumOptions,
-    ControlValueAccessor<List<T>, List<V>>? valueAccessor,
   ) {
     // make sure at least one value is selected
     if (field.value?.length == minimumOptions && value == false) {

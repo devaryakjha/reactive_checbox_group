@@ -1,3 +1,7 @@
+## 1.0.5
+
+- FIXED: value change throwing error if `ViewDataType` is not `String`
+
 ## 1.0.4
 
 - Added `valueAccessor` in constructor for custom `ViewDataType` to `ModelDataType` mapping
