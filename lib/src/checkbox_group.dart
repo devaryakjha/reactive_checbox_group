@@ -67,7 +67,9 @@ class ReactiveCheckboxGroupListTile<T, V>
     ShowErrorsFunction<List<T>>? showErrors,
     int minimumOptions = 0,
     ListBuilder? listBuilder,
+    ControlValueAccessor<List<T>, List<V>>? valueAccessor,
   }) : super(
+          valueAccessor: valueAccessor,
           key: key,
           formControl: formControl,
           formControlName: formControlName,
