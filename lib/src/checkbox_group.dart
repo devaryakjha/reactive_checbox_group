@@ -5,16 +5,16 @@
 import 'package:flutter/material.dart';
 import 'package:reactive_forms/reactive_forms.dart';
 
-typedef CheckboxWidgetBuilder<T> = Widget Function(
-    BuildContext context, T value);
+typedef CheckboxWidgetBuilder<V> = Widget Function(
+    BuildContext context, V value);
 
 typedef ListBuilder = Widget Function(
     BuildContext context, Iterable<CheckboxListTile> values);
 
 /// This is a convenience widget that wraps a [CheckboxListTile] widget in a
 /// [ReactiveCheckboxGroupListTile].
-class ReactiveCheckboxGroupListTile<T>
-    extends ReactiveFocusableFormField<List<T>, List<T>> {
+class ReactiveCheckboxGroupListTile<T, V>
+    extends ReactiveFocusableFormField<List<T>, List<V>> {
   /// Create an instance of a [ReactiveCheckboxGroupListTile].
   ///
   /// Can optionally provide a [formControl] to bind this widget to a control.
@@ -35,11 +35,11 @@ class ReactiveCheckboxGroupListTile<T>
     Key? key,
     String? formControlName,
     FormControl<List<T>>? formControl,
-    required List<T> options,
+    required List<V> options,
     Color? activeColor,
     Color? checkColor,
-    required CheckboxWidgetBuilder<T> titleBuilder,
-    CheckboxWidgetBuilder<T>? subtitleBuilder,
+    required CheckboxWidgetBuilder<V> titleBuilder,
+    CheckboxWidgetBuilder<V>? subtitleBuilder,
     bool isThreeLine = false,
     bool selected = false,
     bool? dense,

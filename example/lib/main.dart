@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             _buildTitle('Default Behavior'),
-            ReactiveCheckboxGroupListTile<String>(
+            ReactiveCheckboxGroupListTile<String, String>(
               controlAffinity: ListTileControlAffinity.leading,
               formControlName: 'hobbies',
               titleBuilder: (context, value) => Text(value),
@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
             _buildTitle('Customize the list'),
             ListTileTheme(
               horizontalTitleGap: 0,
-              child: ReactiveCheckboxGroupListTile<String>(
+              child: ReactiveCheckboxGroupListTile<String, String>(
                 controlAffinity: ListTileControlAffinity.leading,
                 formControlName: 'hobbies',
                 titleBuilder: (context, value) => Text(
@@ -127,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             _buildTitle('With Minimum Options Number'),
-            ReactiveCheckboxGroupListTile<String>(
+            ReactiveCheckboxGroupListTile<String, String>(
               controlAffinity: ListTileControlAffinity.leading,
               formControlName: 'hobbies',
               titleBuilder: (context, value) => Text(value),
